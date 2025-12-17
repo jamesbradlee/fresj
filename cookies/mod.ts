@@ -158,12 +158,12 @@ export function cookiesMw(
   options?: CookiesMiddlewareOptions,
   // deno-lint-ignore no-explicit-any
 ): Middleware<any> {
-  const COOKIE_KEY = options?.key;
+  const cookieKey = options?.key;
 
   return async (ctx) =>
     await cookiesMwImpl(
       ctx as unknown as Context<CookieState & CookieKeyState>,
-      COOKIE_KEY,
+      cookieKey,
     );
 }
 
