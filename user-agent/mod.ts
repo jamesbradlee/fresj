@@ -18,10 +18,10 @@
  *
  * app.use(userAgentMw);
  *
- * app.get("/", define.handler((req, ctx) => {
+ * app.get("/", define.handler((ctx) => {
  *   const ua = ctx.state[userAgent];
  *   return new Response(`Hello, your user agent is: ${ua.toString()}`);
- * }))
+ * }));
  * ```
  *
  * @module
