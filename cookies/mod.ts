@@ -37,7 +37,7 @@
  *   const headers = new Headers();
  *
  *   // Set a signed cookie
- *   await setSignedCookie(headers, {
+ *   await setSignedCookie(ctx, headers, {
  *     name: "session_id",
  *     value: "abc123",
  *     httpOnly: true,
