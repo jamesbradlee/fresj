@@ -1,7 +1,8 @@
 {
   "workspace": {
     "members": [
-      "user-agent"
+      "user-agent",
+      "cookies"
     ]
   }
 }

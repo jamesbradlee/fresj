@@ -5,3 +5,4 @@ A monorepo for numerous packages and projects related to the Fresh framework.
 ## Packages
 
 - [`@fresj/user-agent`](https://jsr.io/@fresj/user-agent)
+- [`@fresj/cookies`](https://jsr.io/@fresj/cookies)
