@@ -225,12 +225,11 @@ export function deleteCookie<T extends CookieState>(
   }
 
   const state = ctx.state as unknown as CookieKeyState;
-  const signedName = `s.${name}`;
   if (
     signedCookies in state &&
-    (signedName in state[signedCookies])
+    (name in state[signedCookies])
   ) {
-    stdDeleteCookie(headers, signedName, attributes);
+    stdDeleteCookie(headers, `s.${name}`, attributes);
   }
 }
 
